@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/midjourney-prompt-generator/static/css/main.c6c66bd3.css",
-    "main.js": "/midjourney-prompt-generator/static/js/main.b3e39ebb.js",
+    "main.js": "/midjourney-prompt-generator/static/js/main.ac6cc083.js",
     "index.html": "/midjourney-prompt-generator/index.html",
     "main.c6c66bd3.css.map": "/midjourney-prompt-generator/static/css/main.c6c66bd3.css.map",
-    "main.b3e39ebb.js.map": "/midjourney-prompt-generator/static/js/main.b3e39ebb.js.map"
+    "main.ac6cc083.js.map": "/midjourney-prompt-generator/static/js/main.ac6cc083.js.map"
   },
   "entrypoints": [
     "static/css/main.c6c66bd3.css",
-    "static/js/main.b3e39ebb.js"
+    "static/js/main.ac6cc083.js"
   ]
 }
