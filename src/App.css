@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fcea;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9fcea;
+}
+
+h1 {
+  color: #295f8e;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Contenedor para los selects */
+.select-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+  gap: 30px; /* Espaciado entre elementos */
+  justify-items: center;
+}
+
+/* Estilos para los divs que contienen los dropdowns */
+.select-container div {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #2d4059; /* Fondo más oscuro */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  color: #f9fcea; /* Texto más claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo para los labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f9fcea;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Estilo para los dropdowns */
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #68aedf;
+  background-color: #68aedf; /* Cambiar color de fondo del dropdown */
+  color: #ffffff; /* Cambiar color del texto para contraste */
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #295f8e; /* Mantener el borde azul oscuro cuando se selecciona */
+}
+
+/* Estilo para el campo personalizado */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #68aedf;
+  background-color: #f9fcea;
+  color: #295f8e;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #295f8e;
+}
+
+/* Botones */
+button {
+  padding: 12px 25px;
+  margin: 20px 10px;
+  background-color: #68aedf;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #295f8e;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Botones adicionales */
+button.copy-btn {
+  background-color: #788487;
+}
+
+button.copy-btn:hover {
+  background-color: #295f8e;
+}
+
+/* --- Media Queries para pantallas pequeñas --- */
+@media (max-width: 768px) {
+  /* Ajustar el contenedor a 1 columna en pantallas pequeñas */
+  .select-container {
+    grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    gap: 20px; /* Reducir el gap para pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 2em; /* Reducir el tamaño del título en móviles */
+  }
+
+  button {
+    font-size: 14px; /* Reducir el tamaño de los botones en móviles */
+    padding: 10px 20px; /* Menos padding en botones */
+  }
+
+  /* Ajustar el tamaño del texto de los selects y campos personalizados */
+  select, input[type="text"] {
+    font-size: 14px; /* Reducir el tamaño del texto en móviles */
+    padding: 10px; /* Menos padding en los inputs */
+  }
+
+  .select-container div {
+    padding: 15px; /* Reducir el padding de los divs */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes adicionales para pantallas muy pequeñas */
+  .select-container {
+    gap: 15px;
+  }
+
+  button {
+    font-size: 12px; /* Reducir un poco más el tamaño de los botones */
+    padding: 8px 15px; /* Menos padding */
+  }
+
+  select, input[type="text"] {
+    font-size: 12px; /* Reducir un poco más el tamaño del texto */
+  }
+
+  .select-container div {
+    padding: 10px; /* Aún menos padding en pantallas muy pequeñas */
+  }
+}
