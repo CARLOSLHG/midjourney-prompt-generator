@@ -165,7 +165,7 @@ function App() {
     const finalVariable11 = variable11 === 'Personalizado' ? customVariable11 : variable11;
     const finalVariable12 = variable12 === 'Personalizado' ? customVariable12 : variable12;
 
-    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, una atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, posición de la cámara ${finalVariable6}, clima ${finalVariable10}, iluminacion ${finalVariable11}, estado ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
+    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
     alert(prompt);
   };
 
@@ -206,14 +206,15 @@ function App() {
     const finalVariable11 = variable11 === 'Personalizado' ? customVariable11 : variable11;
     const finalVariable12 = variable12 === 'Personalizado' ? customVariable12 : variable12;
 
-    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, una atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, posición de la cámara ${finalVariable6}, clima ${finalVariable10}, iluminacion ${finalVariable11}, estado ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
+    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
     navigator.clipboard.writeText(prompt);
     alert('Prompt copiado al portapapeles');
   };
 
   return (
     <div className="App">
-      <h1>MidJourney Prompt Generator</h1>
+      <h1>MidJourney Prompt Generator v1.0</h1>
+      <h2>creado por: CarlosLHG</h2>
 
       <div className="select-container">
       
@@ -299,7 +300,7 @@ function App() {
         </div>
 
         <div>
-          <label>Complentos:</label>
+          <label>Complementos:</label>
           <select value={variable5} onChange={(e) => setVariable5(e.target.value)}>
             <option value="">Selecciona</option>
             {Complemento.map((option, index) => (
