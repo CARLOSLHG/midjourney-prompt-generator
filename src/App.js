@@ -165,7 +165,7 @@ function App() {
     const finalVariable11 = variable11 === 'Personalizado' ? customVariable11 : variable11;
     const finalVariable12 = variable12 === 'Personalizado' ? customVariable12 : variable12;
 
-    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
+    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum es ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
     alert(prompt);
   };
 
@@ -206,7 +206,7 @@ function App() {
     const finalVariable11 = variable11 === 'Personalizado' ? customVariable11 : variable11;
     const finalVariable12 = variable12 === 'Personalizado' ? customVariable12 : variable12;
 
-    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
+    const prompt = `Imagina un ${finalVariable1}, ${finalVariable2}, la atmósfera ${finalVariable3}, ${finalVariable4}, incluye elementos como ${finalVariable5}, la posición de la cámara ${finalVariable6}, el clima ${finalVariable10}, la iluminacion ${finalVariable11}, el momentum es ${finalVariable12}, --v ${variable7} --s ${variable8} --ar ${variable9}`;
     navigator.clipboard.writeText(prompt);
     alert('Prompt copiado al portapapeles');
   };
@@ -340,7 +340,7 @@ function App() {
         </div>
 
         <div>
-          <label>Tiempo:</label>
+          <label>Clima:</label>
           <select value={variable10} onChange={(e) => setVariable10(e.target.value)}>
             <option value="">Selecciona</option>
             {Tiempo.map((option, index) => (
