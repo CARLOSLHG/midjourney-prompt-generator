@@ -1,8 +1,8 @@
-# MidJourney Prompt Generator
+# ImagePrompt IA
 
-### Versión 1.0
+### Versión 1.1
 
-Esta es una aplicación para generar prompts personalizados para MidJourney basada en varias variables como personaje, estilo, ambiente, iluminación, etc.
+Esta es una aplicación para generar prompts personalizados para IAs generadoras de imágenes, como Midjourney, basada en varias variables como personaje, estilo, ambiente, iluminación, etc.
 
 ### Características:
 - Generación dinámica de prompts.
